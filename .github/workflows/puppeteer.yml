@@ -30,7 +30,7 @@ jobs:
 
       - name: Run Puppeteer Script
         env:
-          PUPPETEER_PASSWORD: ${{ secrets.PUPPETEER_PASSWORD }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           IS_TRAIN_BOOST: ${{ github.event.inputs.boost_mode }}
         run: node boostTrainingChange.js
 

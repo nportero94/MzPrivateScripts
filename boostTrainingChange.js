@@ -28,7 +28,7 @@ async function launchBrowser() {
     await page.waitForSelector('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll', { visible: true });
     await page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll');
 
-    const password = process.env.PUPPETEER_PASSWORD;
+    const password = process.env.USER_PASSWORD;
     await page.waitForSelector('#login_password', { visible: true });
     await page.type('#login_password', password);
 
