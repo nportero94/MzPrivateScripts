@@ -33,3 +33,10 @@ jobs:
           PUPPETEER_PASSWORD: ${{ secrets.PUPPETEER_PASSWORD }}
           IS_TRAIN_BOOST: ${{ github.event.inputs.boost_mode }}
         run: node boostTrainingChange.js
+        
+      - name: Upload error screenshot
+        if: failure() # Only upload if the job fails
+        uses: actions/upload-artifact@v3
+        with:
+          name: error-screenshots
+          path: error-screenshot-*.png

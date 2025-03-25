@@ -34,7 +34,19 @@ async function launchBrowser() {
 
     await delay(2000);
     await page.click('#login');
-    await page.waitForSelector('#mz_logo', { visible: true });
+    try {
+      await page.waitForSelector('#mz_logo', { visible: true, timeout: 60000 });
+  } catch (error) {
+      console.error('Error waiting for #mz_logo:', error.message);
+  
+      // Take a screenshot and save it
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Create a timestamp for the filename
+      const screenshotPath = `error-screenshot-${timestamp}.png`;
+      await page.screenshot({ path: screenshotPath });
+  
+      console.log(`Screenshot saved at: ${screenshotPath}`);
+      throw error; // Re-throw the error after capturing the screenshot
+  }
 
     await page.goto("https://www.managerzone.com/?p=players");
     await page.waitForSelector('#players_container', { visible: true });
