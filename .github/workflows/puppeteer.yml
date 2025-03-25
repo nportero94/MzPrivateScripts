@@ -32,4 +32,4 @@ jobs:
         env:
           PUPPETEER_PASSWORD: ${{ secrets.PUPPETEER_PASSWORD }}
           IS_TRAIN_BOOST: ${{ github.event.inputs.boost_mode }}
-        run: node boostTrainingChange.js.js
+        run: node boostTrainingChange.js
