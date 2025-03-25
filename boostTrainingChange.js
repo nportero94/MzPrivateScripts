@@ -10,7 +10,8 @@ function delay(time) {
 async function launchBrowser() {
     return await puppeteer.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        timeout: 60000, // Set a global timeout of 60 seconds
     });
 }
 
