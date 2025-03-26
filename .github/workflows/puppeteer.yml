@@ -3,11 +3,11 @@ name: Run Puppeteer to enable or disable Boost
 on:
   schedule:
     - cron: "30 5 * * *"  # 11:30 PM GMT-6 (5:30 AM UTC)
-    - cron: "0 22 * * *"  # 4:00 PM GMT-6 (10:00 PM UTC)
+    - cron: "0 22 * * *"   # 4:00 PM GMT-6 (10:00 PM UTC)
   workflow_dispatch:
     inputs:
       boost_mode:
-        description: "Indica si queres setear el Boost True o sino False"
+        description: "Indica si deseas establecer el Boost en True o en False"
         required: true
         default: "false"  # Valor por defecto si no se especifica
 
@@ -28,10 +28,31 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Determine Boost Mode
+        id: set_mode
+        run: |
+          # Usar la marca de tiempo del evento para establecer el tiempo de inicio
+          START_TIME=$(echo "${{ github.event.timestamp }}" | awk '{print $1 " " $2}' | cut -d. -f1)
+          CURRENT_TIME=$(date -d "$START_TIME" '+%H:%M')
+
+          echo "Job started at UTC time: $CURRENT_TIME"
+
+          # Comparar horas
+          if [[ "$CURRENT_TIME" == "05:30" ]]; then  # 11:30 PM GMT-6
+            echo "Boost mode is set to true"
+            echo "::set-output name=boost_mode::true"
+          elif [[ "$CURRENT_TIME" == "22:00" ]]; then  # 4:00 PM GMT-6
+            echo "Boost mode is set to false"
+            echo "::set-output name=boost_mode::false"
+          else
+            echo "Warning: The start time does not match any expected times."
+            echo "::set-output name=boost_mode::${{ github.event.inputs.boost_mode }}"  # Usar valor manual
+          fi
+
       - name: Run Puppeteer Script
         env:
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
-          IS_TRAIN_BOOST: ${{ github.event.inputs.boost_mode }}
+          IS_TRAIN_BOOST: ${{ steps.set_mode.outputs.boost_mode }}
         run: node boostTrainingChange.js
 
       - name: Upload error screenshot
