@@ -40,19 +40,19 @@ jobs:
           # Comparar horas
           if [[ "$CURRENT_TIME" == "05:30" ]]; then  # 11:30 PM GMT-6
             echo "Boost mode is set to true"
-            echo "::set-output name=boost_mode::true"
+            echo "boost_mode=true" >> $GITHUB_ENV
           elif [[ "$CURRENT_TIME" == "22:00" ]]; then  # 4:00 PM GMT-6
             echo "Boost mode is set to false"
-            echo "::set-output name=boost_mode::false"
+            echo "boost_mode=false" >> $GITHUB_ENV
           else
             echo "Warning: The start time does not match any expected times."
-            echo "::set-output name=boost_mode::${{ github.event.inputs.boost_mode }}"  # Usar valor manual
+            echo "boost_mode=${{ github.event.inputs.boost_mode }}" >> $GITHUB_ENV  # Usar valor manual
           fi
 
       - name: Run Puppeteer Script
         env:
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
-          IS_TRAIN_BOOST: ${{ steps.set_mode.outputs.boost_mode }}
+          IS_TRAIN_BOOST: ${{ env.boost_mode }}  # Usar la variable del entorno
         run: node boostTrainingChange.js
 
       - name: Upload error screenshot
