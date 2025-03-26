@@ -60,6 +60,7 @@ async function launchBrowser() {
         { "nombre": "Aleksander Prus", "id": 221469696, "trainBoost": "Pases largos", "trainNormal": "cabeza" },
         { "nombre": "Carl Foermose", "id": 221665966, "trainBoost": "intel.", "trainNormal": "remates" },
         { "nombre": "Zé Paulo da Silveira", "id": 221111821, "trainBoost": "Velocidad", "trainNormal": "pases" },
+        { "nombre": "Nicu Petrulean", "id": 221499205, "trainBoost": "Velocidad", "trainNormal": "cabeza" },
         { "nombre": "Mister Trump", "id": 220684902, "trainBoost": "Intel.", "trainNormal": "pases largos" },
         { "nombre": "Dave Efrayim", "id": 221825427, "trainBoost": "pases", "trainNormal": "entradas" },
         { "nombre": "Diego Lopes", "id": 219883833, "trainBoost": "pases", "trainNormal": "pases largos" },
