@@ -64,7 +64,7 @@ async function launchBrowser() {
         { "nombre": "Mister Trump", "id": 220684902, "trainBoost": "Intel.", "trainNormal": "pases largos" },
         { "nombre": "Dave Efrayim", "id": 221825427, "trainBoost": "pases", "trainNormal": "entradas" },
         { "nombre": "Diego Lopes", "id": 219883833, "trainBoost": "pases", "trainNormal": "pases largos" },
-        { "nombre": "Sarbelio Calderon", "id": 228342149, "trainBoost": "velocidad", "trainNormal": "Remates" },
+        { "nombre": "Sarbelio Calderon", "id": 228342149, "trainBoost": "velocidad", "trainNormal": "cabeza" },
         { "nombre": "Misael Sigaran", "id": 217546233, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
         { "nombre": "Arnaldo Bastia", "id": 221422921, "trainBoost": "Intel.", "trainNormal": "cabeza" },
     ];
