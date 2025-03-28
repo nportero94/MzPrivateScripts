@@ -66,7 +66,7 @@ async function launchBrowser() {
         { "nombre": "Diego Lopes", "id": 219883833, "trainBoost": "pases", "trainNormal": "pases largos" },
         { "nombre": "Sarbelio Calderon", "id": 228342149, "trainBoost": "velocidad", "trainNormal": "Remates" },
         { "nombre": "Misael Sigaran", "id": 217546233, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
-        { "nombre": "Arnaldo Bastia", "id": 221422921, "trainBoost": "Intel.", "trainNormal": "pases" },
+        { "nombre": "Arnaldo Bastia", "id": 221422921, "trainBoost": "Intel.", "trainNormal": "cabeza" },
     ];
 
     const useTrainBoost = process.env.IS_TRAIN_BOOST === "true";
