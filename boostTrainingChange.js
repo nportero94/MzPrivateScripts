@@ -1,5 +1,7 @@
+require('dotenv').config(); // Cargar variables de entorno desde el archivo .env
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const fs = require('fs').promises; // Importar módulo para leer archivos
 
 puppeteer.use(StealthPlugin());
 
@@ -52,24 +54,13 @@ async function launchBrowser() {
     await page.waitForSelector('#players_container', { visible: true });
 
     // Lista de jugadores
-    const playersData = [
-        { "nombre": "Svante Valrot", "id": 220526654, "trainBoost": "Intel.", "trainNormal": "Remates" },
-        { "nombre": "Eumaios Zorbas", "id": 220290465, "trainBoost": "pases largos", "trainNormal": "remates" },
-        { "nombre": "Gerardo Piqué", "id": 220611796, "trainBoost": "velocidad", "trainNormal": "pases" },
-        { "nombre": "Veijo Väätäinen", "id": 220066853, "trainBoost": "Intel.", "trainNormal": "Cabeza" },
-        { "nombre": "Aleksander Prus", "id": 221469696, "trainBoost": "Pases largos", "trainNormal": "cabeza" },
-        { "nombre": "Carl Foermose", "id": 221665966, "trainBoost": "intel.", "trainNormal": "remates" },
-        { "nombre": "Teofil Fudalej", "id": 218800406, "trainBoost": "Ctrl Balón", "trainNormal": "remates" },
-        { "nombre": "Zé Paulo da Silveira", "id": 221111821, "trainBoost": "Velocidad", "trainNormal": "pases" },
-        { "nombre": "Nicu Petrulean", "id": 221499205, "trainBoost": "Velocidad", "trainNormal": "cabeza" },
-        { "nombre": "Mister Trump", "id": 220684902, "trainBoost": "Ctrl Balón", "trainNormal": "pases largos" },
-        { "nombre": "Dave Efrayim", "id": 221825427, "trainBoost": "pases", "trainNormal": "entradas" },
-        { "nombre": "Diego Lopes", "id": 219883833, "trainBoost": "pases", "trainNormal": "pases largos" },
-        { "nombre": "Sarbelio Calderon", "id": 228342149, "trainBoost": "velocidad", "trainNormal": "cabeza" },
-        { "nombre": "Misael Sigaran", "id": 217546233, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
-        { "nombre": "Arnaldo Bastia", "id": 221422921, "trainBoost": "Intel.", "trainNormal": "cabeza" },
-    ];
-
+    let playersData;
+    try {
+        playersData = JSON.parse(await fs.readFile('./playersData.json', 'utf8'));
+    } catch (error) {
+        console.error('Error reading or parsing playersData.json:', error.message);
+        process.exit(1); // Exit the script with a failure code
+    }
     const useTrainBoost = process.env.IS_TRAIN_BOOST === "true";
     const jugadoresExitosos = [];
     const jugadoresFallidos = [];
