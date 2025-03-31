@@ -54,8 +54,13 @@ async function launchBrowser() {
     await page.waitForSelector('#players_container', { visible: true });
 
     // Lista de jugadores
-    const playersData = JSON.parse(await fs.readFile('./playersData.json', 'utf8'));
-
+    let playersData;
+    try {
+        playersData = JSON.parse(await fs.readFile('./playersData.json', 'utf8'));
+    } catch (error) {
+        console.error('Error reading or parsing playersData.json:', error.message);
+        process.exit(1); // Exit the script with a failure code
+    }
     const useTrainBoost = process.env.IS_TRAIN_BOOST === "true";
     const jugadoresExitosos = [];
     const jugadoresFallidos = [];
