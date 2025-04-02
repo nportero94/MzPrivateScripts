@@ -2,7 +2,7 @@ name: Run Puppeteer with Boost False
 
 on:
   schedule:
-    - cron: "0 22 * * 0,1,3,4,5"  # 4:00 PM GMT-6 (10:00 PM UTC), excluyendo martes y sabados
+    - cron: "7 22 * * 0,1,3,4,5"  # 4:00 PM GMT-6 (10:00 PM UTC), excluyendo martes y sabados
   workflow_dispatch:
     inputs:
       boost_mode:
