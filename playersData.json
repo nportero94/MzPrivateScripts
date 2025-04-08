@@ -9,7 +9,7 @@
   { "nombre": "Harlow Schuhmacher", "id": 216660653, "trainBoost": "intel.", "trainNormal": "B. parado" },
   { "nombre": "Toussaint Alvarez", "id": 220104823, "trainBoost": "entradas", "trainNormal": "entradas" },
   { "nombre": "Higinio Karlo", "id": 220012406, "trainBoost": "remates", "trainNormal": "entradas" },
-  { "nombre": "Severino Casero", "id": 220429778, "trainBoost": "intel.", "trainNormal": "pases" },
+  { "nombre": "Severino Casero", "id": 220429778, "trainBoost": "pases", "trainNormal": "pases largos" },
   { "nombre": "Ma Xiang Yang", "id": 221819807, "trainBoost": "Ctrl Balón", "trainNormal": "entradas" },
   { "nombre": "Manolo Agriano", "id": 220665820, "trainBoost": "pases largos", "trainNormal": "cabeza" },
   { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "remates" },
