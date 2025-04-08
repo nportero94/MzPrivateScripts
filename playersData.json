@@ -3,6 +3,7 @@
   { "nombre": "Robert Serwacki", "id": 220369694, "trainBoost": "entradas", "trainNormal": "remates" },
   { "nombre": "Bidari Sorriba", "id": 219874888, "trainBoost": "intel.", "trainNormal": "B. parado" },
   { "nombre": "Gamus Rocha", "id": 219037744, "trainBoost": "entradas", "trainNormal": "cabeza" },
+  { "nombre": "Flavio Marchegiani", "id": 221657223, "trainBoost": "velocidad", "trainNormal": "remates" },
   { "nombre": "Nicolás Marichal", "id": 219128013, "trainBoost": "intel.", "trainNormal": "cabeza" },
   { "nombre": "Angelo Eiró", "id": 223426635, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
   { "nombre": "Harlow Schuhmacher", "id": 216660653, "trainBoost": "intel.", "trainNormal": "B. parado" },
@@ -13,5 +14,5 @@
   { "nombre": "Manolo Agriano", "id": 220665820, "trainBoost": "pases largos", "trainNormal": "cabeza" },
   { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "remates" },
   { "nombre": "Herminio Mino", "id": 222871342, "trainBoost": "Ctrl Balón", "trainNormal": "remates" },
-  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "Intel.", "trainNormal": "B. parado" }
+  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "velocidad", "trainNormal": "B. parado" }
 ]
