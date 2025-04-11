@@ -14,5 +14,5 @@
   { "nombre": "Manolo Agriano", "id": 220665820, "trainBoost": "pases largos", "trainNormal": "cabeza" },
   { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "remates" },
   { "nombre": "Herminio Mino", "id": 222871342, "trainBoost": "Ctrl Balón", "trainNormal": "remates" },
-  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "velocidad", "trainNormal": "B. parado" }
+  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "pases", "trainNormal": "B. parado" }
 ]
