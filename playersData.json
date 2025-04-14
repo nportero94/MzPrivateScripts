@@ -12,7 +12,8 @@
   { "nombre": "Severino Casero", "id": 220429778, "trainBoost": "pases", "trainNormal": "pases largos" },
   { "nombre": "Ma Xiang Yang", "id": 221819807, "trainBoost": "Ctrl Balón", "trainNormal": "entradas" },
   { "nombre": "Manolo Agriano", "id": 220665820, "trainBoost": "pases largos", "trainNormal": "cabeza" },
-  { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "remates" },
+  { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "B. parado" },
   { "nombre": "Herminio Mino", "id": 222871342, "trainBoost": "Ctrl Balón", "trainNormal": "remates" },
-  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "pases", "trainNormal": "B. parado" }
+  { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "pases", "trainNormal": "B. parado" },
+   { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "intel.", "trainNormal": "remates" }
 ]
