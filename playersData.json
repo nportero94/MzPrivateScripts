@@ -15,5 +15,5 @@
   { "nombre": "Diego Polenta", "id": 219260841, "trainBoost": "pases largos", "trainNormal": "B. parado" },
   { "nombre": "Herminio Mino", "id": 222871342, "trainBoost": "Ctrl Balón", "trainNormal": "remates" },
   { "nombre": "Arsenio Bide", "id": 217596758, "trainBoost": "pases", "trainNormal": "B. parado" },
-   { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "intel.", "trainNormal": "remates" }
+  { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "intel.", "trainNormal": "remates" }
 ]
