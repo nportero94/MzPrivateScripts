@@ -12,5 +12,7 @@
   { "nombre": "Ma Xiang Yang", "id": 221819807, "trainBoost": "Ctrl Balón", "trainNormal": "entradas" },
   { "nombre": "Herminio Mino", "id": 222871342, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
   { "nombre": "Diedrik Jamieson", "id": 217441288, "trainBoost": "pases largos", "trainNormal": "remates" },
-  { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "remates", "trainNormal": "remates" }
+  { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "remates", "trainNormal": "remates" },
+  { "nombre": "Niva Espellosa", "id": 218953335, "trainBoost": "remates", "trainNormal": "pases largos" },
+  { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "velocidad", "trainNormal": "B. parado" }
 ]
