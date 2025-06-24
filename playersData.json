@@ -5,7 +5,6 @@
   { "nombre": "Gamus Rocha", "id": 219037744, "trainBoost": "entradas", "trainNormal": "cabeza" },
   { "nombre": "Leszek Milko", "id": 221586602, "trainBoost": "entradas", "trainNormal": "remates" },
   { "nombre": "Flavio Marchegiani", "id": 221657223, "trainBoost": "remates", "trainNormal": "remates" },
-  { "nombre": "Nicolás Marichal", "id": 219128013, "trainBoost": "intel.", "trainNormal": "cabeza" },
   { "nombre": "Angelo Eiró", "id": 223426635, "trainBoost": "Ctrl Balón", "trainNormal": "B. parado" },
   { "nombre": "Severino Casero", "id": 220429778, "trainBoost": "intel.", "trainNormal": "pases largos" },
   { "nombre": "Ma Xiang Yang", "id": 221819807, "trainBoost": "Ctrl Balón", "trainNormal": "pases largos" },
@@ -13,5 +12,6 @@
   { "nombre": "Diedrik Jamieson", "id": 217441288, "trainBoost": "pases largos", "trainNormal": "remates" },
   { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "remates", "trainNormal": "remates" },
   { "nombre": "Niva Espellosa", "id": 218953335, "trainBoost": "remates", "trainNormal": "entradas" },
-  { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "velocidad", "trainNormal": "B. parado" }
+  { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "velocidad", "trainNormal": "B. parado" },
+  { "nombre": "Serafino Elorriaga", "id": 225504392, "trainBoost": "pases largos", "trainNormal": "B. parado" }
 ]
