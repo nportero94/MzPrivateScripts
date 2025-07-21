@@ -10,7 +10,7 @@
   { "nombre": "Diedrik Jamieson", "id": 217441288, "trainBoost": "pases largos", "trainNormal": "remates" },
   { "nombre": "孔雄邦", "id": 221166445, "trainBoost": "remates", "trainNormal": "cabeza" },
   { "nombre": "Niva Espellosa", "id": 218953335, "trainBoost": "remates", "trainNormal": "entradas" },
-  { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "velocidad", "trainNormal": "B. parado" },
+  { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "pases largos", "trainNormal": "B. parado" },
   { "nombre": "Serafino Elorriaga", "id": 225504392, "trainBoost": "pases largos", "trainNormal": "B. parado" },
   { "nombre": "Zé Tinoco", "id": 218022470, "trainBoost": "intel.", "trainNormal": "B. parado" },
   { "nombre": "Batista Rosio", "id": 220993293, "trainBoost": "pases largos", "trainNormal": "remates" }
