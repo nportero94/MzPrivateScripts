@@ -10,5 +10,8 @@
   { "nombre": "Niva Espellosa", "id": 218953335, "trainBoost": "remates", "trainNormal": "entradas" },
   { "nombre": "Damian Janiczek", "id": 218647353, "trainBoost": "pases largos", "trainNormal": "B. parado" },
   { "nombre": "Serafino Elorriaga", "id": 225504392, "trainBoost": "pases largos", "trainNormal": "B. parado" },
-  { "nombre": "Batista Rosio", "id": 220993293, "trainBoost": "pases largos", "trainNormal": "B. parado" }
+  { "nombre": "Batista Rosio", "id": 220993293, "trainBoost": "pases largos", "trainNormal": "B. parado" },
+  { "nombre": "Kaj Klitgaard", "id": 221841967, "trainBoost": "entradas", "trainNormal": "remate" },
+  { "nombre": "Ryan Monvoisin", "id": 217228752, "trainBoost": "intel.", "trainNormal": "cabeza" },
+  { "nombre": "Benigno Chinto", "id": 220522823, "trainBoost": "intel.", "trainNormal": "B. parado" }
 ]
